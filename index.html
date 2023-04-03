@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Derek">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="./scripts/transformations.js"></script>
+  <script type="text/javascript" src="./scripts/shapes.js"></script>
+  <script type="text/javascript" src="./scripts/controls.js"></script>
+  <script type="text/javascript" src="./scripts/wireframe.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Wireframes-JS</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-6">
+      <canvas id="main" width="600" height="450" style="border:1px solid #000000;"></canvas>  
+    </div>
+    <div class="col-6">
+      <table>
+        <tr>
+          <th>
+            Translate
+          </th>
+          <td>    
+            <button id="btnTransLeft" title="Move shape 75px left." onclick="translateLeft()">Translate Left</button>
+            <button id="btnTransRight" title="Move shape 75px right." onclick="translateRight()">Translate Right</button>
+            <button id="btnTransUp" title="Move shape 35px up." onclick="translateUp()">Translate Up</button>
+            <button id="btnTransDown" title="Move shape 35px down." onclick="translateDown()">Translate Down</button>
+            <button id="btnTransFrwrd" title="Move shape 35px down." onclick="translateForward()">Translate Forward</button>
+            <button id="btnTransBkwrd" title="Move shape 35px down." onclick="translateBackwards()">Translate Backward</button>
+          </td>
+        </tr>
+        <tr>
+          <th>
+              Scale
+          </th>
+          <td>
+            <button id="btnScaleUp" title="Increase shape size by 10%." onclick="scaleUp()">Increase Size</button>
+            <button id="btnScaleDown" title="Decrease shape size by 10%." onclick="scaleDown()">Decrease Size</button>
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2">
+            Rotate
+          </th>
+          <td>
+            <button id="btnRotateX" title="Rotate shape around x-axis by 0.05 radians." onclick="rotateAroundX()">Rotate X</button>
+            <button id="btnRotateY" title="Rotate shape around y-axis by 0.05 radians." onclick="rotateAroundY()">Rotate Y</button>
+            <button id="btnRotateZ" title="Rotate shape around z-axis by 0.05 radians." onclick="rotateAroundZ()">Rotate Z</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btnSpinX" title="Continuously rotate shape around x-axis" onclick="spinAboutX()">Spin X</button>
+            <button id="btnSpinY" title="Continuously rotate shape around y-axis" onclick="spinAboutY()">Spin Y</button>
+            <button id="btnSpinZ" title="Continuously rotate shape around z-axis" onclick="spinAboutZ()">Spin Z</button>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Shear
+          </th>
+          <td>
+            <button id="btnShearLeft" title="Shear top of shape left by 10%." onclick="shearLeft()">Shear Left</button>
+            <button id="btnShearRight" title="Shear top of shape right by 10%." onclick="shearRight()">Shear Right</button>
+          </td>
+        </tr>
+		 <tr>
+          <th>
+            Shape   
+          </th>
+          <td>
+            <button id="cube" onclick="changeToCube()">Cube</button>
+            <button id="pyramid" onclick="changeToPyramid()">Pyramid</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btnReset" title="Reset position, size and orientation of shape." onclick="reset()">Reset</button>
+            <button id="btnCamera" title="Reset position, size and orientation of shape." onclick="toggleCamera()">Camera</button>
+            <button id="btnPerspective" title="Reset position, size and orientation of shape." onclick="togglePerspective()">Perspective</button>
+          </td>
+        </tr>
+        
+
+      </table> 
+    </div>
+  </div>
+</body>
+</html>
