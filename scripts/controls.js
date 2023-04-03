@@ -290,7 +290,7 @@ function reset()
 		clearInterval(window.spin);
 		isSpinning = false;
 	}
-	initTranslate();
+	init();
 	draw();
 }
 
